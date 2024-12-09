@@ -1,23 +1,25 @@
 # Backend:
-## *Görev 1*: API'lerin Oluşturulması ve Bakımı
-### Senaryo: Şirketinizin müşteri memnuniyeti ve itibar analizini görüntülemek için web platformuna veri sunacak bir API'ye ihtiyacı var.
+## *Görev 1*: API Oluşturulması ve Bakımı
+### Senaryo: Şirketimizin müşteri memnuniyeti ve itibar analizini görüntülemek için web platformuna veri sunacak bir API ihtiyacı var.
 
 ### Görev: Aşağıdaki işlevlere sahip bir RESTful API oluşturun:
 
 ### Kimlik Doğrulama ve Yetkilendirme:
 * JWT kullanarak kullanıcı kaydı ve oturum açma işlemlerini uygulayın.
-* Rol tabanlı erişim kontrolü: Yöneticiler işletmeleri yönetebilir ve işletmeler yalnızca kendi verilerini görüntüleyebilir.
 
 ### İşletme Yönetimi:
-* İşletme varlıkları için CRUD (Oluştur, Oku, Güncelle, Sil) işlemleri.
+* İşletme varlıkları için CRUD işlemleri.
+  
+### Rol tabanlı erişim kontrolü: 
+* Admin işletmelere ait veriler üzerinde oluşturma, okuma, güncelleme ve silme yetkinliğine sahip.
+* İşletmeler yalnızca kendi verilerinin tamamını okuyabilir. Diğer işletmelerin belirli verilerini okuyabilir. 
 
 ### Veri Alma:
-* Bir işletme için müşteri memnuniyeti puanlarını, duygu analizi sonuçlarını ve diğer yapay zeka türevli içgörüleri alın.
-* Zaman aralığına, duygu kategorisine (olumlu/olumsuz/nötr) ve platforma (ör. TripAdvisor, Booking.com) göre filtrelemeyi etkinleştirin.
+* Bir işletme için müşteri memnuniyeti puanları, duygu analizi sonuçları vb. verileri alın.
+* Zaman aralığına, duygu kategorisine (olumlu/olumsuz/nötr) ve platforma (ör. Platfom1, platform2) göre filtrelemeli verileri alın.
 
 ### Veri Toplama Uç Noktası:
-* Belirli bir işletme için toplu istatistikler (ör. ortalama memnuniyet puanı, müşteri yorumlarındaki en yaygın anahtar kelimeler) döndüren bir uç nokta sağlayın.
+* Belirli bir işletme için toplu istatistikler yani müşteri dashboard'unun oluşturulması için gereken verilerin (ör. ortalama memnuniyet puanı, müşteri yorumlarındaki en yaygın anahtar kelimeler) bütününü döndüren bir uç nokta sağlayın.
 
-### Teknik Yığın Gereksinimleri:
-* Arka uç için Node.js veya Python (Flask/FastAPI/Django) kullanın.
-* Veritabanı olarak PostgreSQL kullanın.
+### Teknik Gereksinimler:
+* Veritabanı olarak SQL dilini kullanan araç seçilmeli.

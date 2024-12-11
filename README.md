@@ -37,28 +37,15 @@
 * Belirli bir işletme için olumlu yorumlarda en sık geçen ilk 5 anahtar kelimeyi getirecek bir sorgu.
 * Belirli bir zaman aralığında bir işletme için ortalama memnuniyet puanını hesaplayan bir sorgu.
 
-## Görev 3: Sunucu Yönetimi
+## Görev 3: Veri Görselleştirme
 
-### Görevler:
-* Sunucu güvenliğini sağlamanız gerekiyor. Çözümünüz ne olur?
+### Senaryo: Bir veri tabanından çekilmiş sentiment_Result.csv adlı veri setinin görselleştirilmesi gerekmektedir.
 
-* Sunucu üzerinde bir SQL-Database instance kurun ve API ile bağlayın.
+### Görev: Veri setindeki score ve sentiment sütunlarını kullanarak aşağıdaki işlemleri gerçekleştiriniz:
 
-### Opsi̇yonel Görevler:
-* API ve veritabanını barındırmak için Linux tabanlı bir sunucu (örn. Ubuntu) kurun.
+### "Score" ile "Sentiment" arasındaki ilişkinin görselleştirilmesi:
+* Bu ilişkiyi göstermek için grafik, çizelge veya diğer uygun görselleştirme yöntemlerini kullanınız.
 
-* Kurulumdan sonra API ve veritabanına nasıl erişileceğine dair kısa bir kılavuz sağlayın.
-
-## Görev 4: Docker Kullanarak ML Modeli Dağıtımı
-
-### Senaryo: Yapay zeka ekibi, müşteri yorumlarının duygu analizi için eğitilmiş bir model sağladı. Sizin göreviniz bu modeli çıkarım için dağıtmaktır.
-
-### Görevler:
-* Makine öğrenimi modelini sunmak için bir Docker konteyneri oluşturun.
-
-* Model, müşteri yorumlarını bir API uç noktası aracılığıyla girdi olarak kabul etmeli ve duyarlılık puanını ve kategorisini (olumlu/nötr/olumsuz) döndürmelidir.
-
-### Opsi̇yonel Görevler:
-* Canlı analiz sağlamak amacı ile ML konteyneriyle iletişim kuran API için ikinci bir konteyner oluşturun.
-
-* Kullanılan veritabanı, backend API ve ML model API dahil olmak üzere tüm çözümü Dockerize edin.
+### Değerlendirme Kriterleri:
+* Score: Müşterilerin geri bildirimlerinde verdikleri puanlar.
+* Sentiment: Müşterilerin geri bildirim metinlerine uygulanan duygu analizinin sonucu (ör. "Positive", "Neutral", "Negative").
